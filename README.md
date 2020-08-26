@@ -1,72 +1,191 @@
-# [Start Bootstrap - Creative](https://startbootstrap.com/themes/creative/)
+doctype html
+html(lang='en')
 
-[Creative](https://startbootstrap.com/themes/creative/) is a one page, creative website theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+    head
 
-## Preview
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
 
-[![Creative Preview](https://startbootstrap.com/assets/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
+        title Creative - Start Bootstrap Theme
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-creative/)**
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
-## Status
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-creative/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-creative.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-creative)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-creative/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-creative?type=dev)
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
 
-## Download and Installation
+        // Third party plugin CSS
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css', rel='stylesheet')
 
-To begin using this template, choose one of the following options to get started:
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/themes/creative/)
-- Install using npm: `npm i startbootstrap-creative`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-creative.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-creative)
+    body#page-top
 
-## Usage
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top') Korea Family Market
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto.my-2.my-lg-0
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') About
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#services') Services
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact') Contact
 
-### Basic Usage
+        // Masthead
+        header.masthead
+            .container.h-100
+                .row.h-100.align-items-center.justify-content-center.text-center
+                    .col-lg-10.align-self-end
+                        h1.text-uppercase.text-white.font-weight-bold Welcome to Korea Family Market
+                        hr.divider.my-4
+                    .col-lg-8.align-self-baseline
+                        p.text-white-75.font-weight-light.mb-5
+                            |Korea Family Market is a a market place where businesses grow and flourish|
+                        a.btn.btn-primary.btn-xl.js-scroll-trigger(href='#about') Find Out More
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+        // About
+        section#about.page-section.bg-primary
+            .container
+                .row.justify-content-center
+                    .col-lg-8.text-center
+                        h2.text-white.mt-0 We've got what you need!
+                        hr.divider.light.my-4
+                        p.text-white-50.mb-4
+                            
+                        a.btn.btn-light.btn-xl.js-scroll-trigger(href='#services') Get Started!
 
-### Advanced Usage
+        // Services
+        section#services.page-section
+            .container
+                h2.text-center.mt-0 At Your Service
+                hr.divider.my-4
+                .row
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            i.fas.fa-4x.fa-gem.text-primary.mb-4
+                            h3.h4.mb-2 Sturdy Themes
+                            p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            i.fas.fa-4x.fa-laptop-code.text-primary.mb-4
+                            h3.h4.mb-2 Up to Date
+                            p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            i.fas.fa-4x.fa-globe.text-primary.mb-4
+                            h3.h4.mb-2 Ready to Publish
+                            p.text-muted.mb-0 You can use this design as is, or you can make changes!
+                    .col-lg-3.col-md-6.text-center
+                        .mt-5
+                            i.fas.fa-4x.fa-heart.text-primary.mb-4
+                            h3.h4.mb-2 Made with Love
+                            p.text-muted.mb-0 Is it really open source if it's not made with love?
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+        // Portfolio
+        div#portfolio
+            .container-fluid.p-0
+                .row.no-gutters
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/1.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/1.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.jpg', alt='')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
+                    .col-lg-4.col-sm-6
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.jpg')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.jpg', alt='')
+                            .portfolio-box-caption.p-3
+                                .project-category.text-white-50
+                                    | Category
+                                .project-name
+                                    | Project Name
 
-#### npm Scripts
+        // Call to action
+        section.page-section.bg-dark.text-white
+            .container.text-center
+                h2.mb-4 Free Download at Start Bootstrap!
+                a.btn.btn-light.btn-xl(href='https://startbootstrap.com/themes/creative/') Download Now!
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+        // Contact
+        section#contact.page-section
+            .container
+                .row.justify-content-center
+                    .col-lg-8.text-center
+                        h2.mt-0 Let's Get In Touch!
+                        hr.divider.my-4
+                        p.text-muted.mb-5
+                            | Ready to shop  with us? Give us a call or send us an email and we will get back to you as soon as possible!
+                .row
+                    .col-lg-4.ml-auto.text-center.mb-5.mb-lg-0
+                        i.fas.fa-phone.fa-3x.mb-3.text-muted
+                        div +1 (555) 123-4567
+                    .col-lg-4.mr-auto.text-center
+                        i.fas.fa-envelope.fa-3x.mb-3.text-muted
 
-You must have npm installed in order to use this build environment.
+                        // Make sure to change the email address in BOTH the anchor text and the link target below!
+                        a.d-block(href='mailto:contact@yourwebsite.com') contact@yourwebsite.com
 
-## Bugs and Issues
+        // Footer
+        footer.bg-light.py-5
+            .container
+                .small.text-center.text-muted Copyright © 2020 - Korea Family Market
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/themes/creative/).
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
 
-## About
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js')
 
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
-
-- <http://davidmiller.io>
-- <https://twitter.com/davidmillerskt>
-- <https://github.com/davidtmiller>
-
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
+        // Core theme JS
+        script(src='js/scripts.js')
 Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/gh-pages/LICENSE) license.
